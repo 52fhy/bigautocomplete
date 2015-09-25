@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jquery实现仿搜索引擎文本框自动补全插件</title>
+
+
+<script src="jquery-1.7.min.js" type="text/javascript"></script>
+<script src="jquery.bigautocomplete.js?v=2"></script>
+<link rel="stylesheet" href="jquery.bigautocomplete.css" type="text/css" />
+<script type="text/javascript">
+$(function(){
+
+	$("#tt").bigAutocomplete({
+		width:543,
+		data:[{"title":"\u5317\u4eac\u73b0\u4ee3"},{"title":"\u5317\u4eac\u57ce\u5efa\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u5efa\u5de5\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u9996\u90fd\u65c5\u6e38\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u533b\u836f\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u4e00\u8f7b\u63a7\u80a1\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u91d1\u9685\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u71d5\u4eac\u5564\u9152\u96c6\u56e2\u516c\u53f8"},{"title":"\u5317\u4eac\u5e02\u71c3\u6c14\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u4f4f\u603b\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"}],
+		callback:function(data){
+			//alert(data.title);	
+		}
+	});
+
+})
+</script>
+
+</head>
+<body>
+
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+.demo{width:720px;margin:30px auto;}
+.demo h2{font-size:16px;color:#3366cc;height:30px;}
+.demo li{float:left;}
+.text,.button{background:url(http://su.bdimg.com/static/superpage/img/spis_031ddf34.png) no-repeat;}
+.text{width:529px;height:22px;padding:4px 7px;padding:6px 7px 2px\9;font:16px arial;border:1px solid #cdcdcd;border-color:#9a9a9a #cdcdcd #cdcdcd #9a9a9a;vertical-align:top;outline:none;margin:0 5px 0 0;}
+.button{width:95px;height:32px;padding:0;padding-top:2px\9;border:0;background-position:0 -35px;background-color:#ddd;cursor:pointer}
+</style>
+
+<div class="demo">
+	<h2>bigautocomplete联想输入测试---请输入：北京</h2>
+	<form action="" method="post" name="searchform" id="searchform" class="searchinfo">
+		<ul>
+			<li><input type="text" id="tt" value="" class="text" /></li>
+			<li><input type="submit" value="搜索" class="button" /></li>
+		</ul>
+	</form>
+</div>
+
+</body>
+</html>
