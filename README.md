@@ -1,0 +1,2 @@
+# bigautocomplete
+实现仿搜索引擎文本框自动补全Jquery插件
