@@ -88,12 +88,12 @@ $(function(){
 ```
 
 服务端返回数据格式：
-```
+``` javascript
 {"data":[{"title":"\u5317\u4eac\u73b0\u4ee3"},{"title":"\u5317\u4eac\u57ce\u5efa\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u5efa\u5de5\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u9996\u90fd\u65c5\u6e38\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u533b\u836f\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u4e00\u8f7b\u63a7\u80a1\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u91d1\u9685\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u71d5\u4eac\u5564\u9152\u96c6\u56e2\u516c\u53f8"},{"title":"\u5317\u4eac\u5e02\u71c3\u6c14\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"},{"title":"\u5317\u4eac\u4f4f\u603b\u96c6\u56e2\u6709\u9650\u8d23\u4efb\u516c\u53f8"}]}
 ```
 
 服务端的代码：（以ThinkPHP示例）
-```
+``` php
 public function suggestCom(){
         $wd = $_POST['keyword'];
         $keywords = $wd;
@@ -115,7 +115,7 @@ public function suggestCom(){
 附上jquery.bigautocomplete.js和jquery.bigautocomplete.css文件代码：
 
 jquery.bigautocomplete.js
-```
+```javascript
 (function($){
     var bigAutocomplete = new function(){
         this.currentInputText = null;//目前获得光标的输入框（解决一个页面多个输入框绑定自动补全功能）
@@ -339,7 +339,7 @@ jquery.bigautocomplete.js
 ```
 
 jquery.bigautocomplete.css
-```
+```css
 @charset "utf-8";
 .bigautocomplete-layout{display:none;background-color:#FFFFFF;border:1px solid #BCBCBC;position:absolute;z-index:9999 !important;max-height:220px;overflow-x:hidden;overflow-y:auto; text-align:left;}
 .bigautocomplete-layout table{border-collapse:collapse;border-spacing:0;background:none repeat scroll 0 0 #FFFFFF;width:100%;cursor:default;}
@@ -352,7 +352,7 @@ css经过改写，以适应某些情况不兼容的bug。
  
 
 页面html代码：
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
