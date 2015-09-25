@@ -1,8 +1,6 @@
 # bigautocomplete实现联想输入，自动补全
 
-标签： JavaScript JS插件
-
----
+自动补全插件，有些功能有限，有些是老外做的，不支持中文。今天发现一个国人做的，叫做bigautocomplete，还不错。
 
 >bigautocomplete是一款Jquery插件。用它实现仿搜索引擎文本框自动补全插件功能很实用，使用也很简单，引入了插件之后写几行代码就可以实现，可以灵活设置。
 
